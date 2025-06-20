@@ -7,4 +7,5 @@ vim.keymap.set("n", "<leader>ot", function()
   vim.cmd("lcd " .. dir)       -- change local dir for the terminal window
   vim.cmd("terminal")
 end, { noremap = true, silent = true })
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
 
