@@ -19,13 +19,99 @@ require('kanagawa').setup({
     end,
     theme = "wave",              -- Load "wave" theme
     background = {               -- map the value of 'background' option to a theme
-        dark = "wave",           -- try "dragon" !
+        dark = "dragon",           -- try "dragon" !
         light = "lotus"
     },
 })
+require("vague").setup({
+  transparent =false, -- don't set background
+  -- disable bold/italic globally in `style`
+  bold = false,
+  italic = true,
+  style = {
+    -- "none" is the same thing as default. But "italic" and "bold" are also valid options
+    boolean = "bold",
+    number = "none",
+    float = "none",
+    error = "bold",
+    comments = "italic",
+    conditionals = "none",
+    functions = "bold",
+    headings = "bold",
+    operators = "none",
+    strings = "italic",
+    variables = "none",
 
+    -- keywords
+    keywords = "none",
+    keyword_return = "italic",
+    keywords_loop = "none",
+    keywords_label = "none",
+    keywords_exception = "none",
+
+    -- builtin
+    builtin_constants = "none",
+    builtin_functions = "none",
+    builtin_types = "bold",
+    builtin_variables = "none",
+  },
+  -- plugin styles where applicable
+  -- make an issue/pr if you'd like to see more styling options!
+  plugins = {
+    cmp = {
+      match = "bold",
+      match_fuzzy = "bold",
+    },
+    dashboard = {
+      footer = "italic",
+    },
+    lsp = {
+      diagnostic_error = "bold",
+      diagnostic_hint = "none",
+      diagnostic_info = "italic",
+      diagnostic_ok = "none",
+      diagnostic_warn = "bold",
+    },
+    neotest = {
+      focused = "bold",
+      adapter_name = "bold",
+    },
+    telescope = {
+      match = "bold",
+    },
+  },
+
+  -- Override highlights or add new highlights
+  on_highlights = function(highlights, colors) end,
+
+  -- Override colors
+  colors = {
+	  bg = "#141415",
+    fg = "#cdcdcd",
+    floatBorder = "#878787",
+    line = "#252530",
+    comment = "#606079",
+    builtin = "#6e94b2",
+    func = "#c48282",
+    string = "#7ec97e",
+    number = "#e0a363",
+    property = "#c3c3d5",
+    constant = "#aeaed1",
+    parameter = "#bb9dbd",
+    visual = "#333738",
+    error = "#f44747",
+    warning = "#f3be7c",
+    hint = "#7e98e8",
+    operator = "#90a0b5",
+    keyword = "#6e94b2",
+    type = "#9bb4bc",
+    search = "#405065",
+    plus = "#7fa563",
+    delta = "#f3be7c",
+}, 
+})
 -- setup must be called before loading
-vim.cmd("colorscheme kanagawa-wave")
+vim.cmd("colorscheme vague")
 vim.api.nvim_set_hl(0, "LineNr", { bg = "none" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "none" })
 
