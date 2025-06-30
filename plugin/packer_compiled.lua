@@ -125,6 +125,11 @@ _G.packer_plugins = {
     path = "/home/valen/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["oldworld.nvim"] = {
+    loaded = true,
+    path = "/home/valen/.local/share/nvim/site/pack/packer/start/oldworld.nvim",
+    url = "https://github.com/dgox16/oldworld.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/valen/.local/share/nvim/site/pack/packer/start/packer.nvim",

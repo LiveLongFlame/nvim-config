@@ -24,7 +24,7 @@ require('kanagawa').setup({
     },
 })
 require("vague").setup({
-  transparent =true, -- don't set background
+  transparent =false, -- don't set background
   -- disable bold/italic globally in `style`
   bold = false,
   italic = true,
@@ -86,7 +86,7 @@ require("vague").setup({
 
   -- Override colors
   colors = {
-	  bg = "#141415",
+	bg = "#111111",
     fg = "#cdcdcd",
     floatBorder = "#878787",
     line = "#252530",
@@ -110,6 +110,53 @@ require("vague").setup({
     delta = "#f3be7c",
 }, 
 })
+
+require("oldworld").setup({
+    styles = {
+        booleans = { italic = true, bold = false },
+    },
+    integrations = {
+        hop = true,
+        telescope = true,
+    },
+})
+
+local default_config = {
+    terminal_colors = true, -- enable terminal colors
+    variant = "default", -- default, oled, cooler
+    styles = { -- You can pass the style using the format: style = true
+        comments = {}, -- style for comments
+         keywords = {}, -- style for keywords
+        identifiers = {}, -- style for identifiers
+        functions = {}, -- style for functions
+        variables = {}, -- style for variables
+        booleans = {}, -- style for booleans
+    },
+    integrations = { -- You can disable/enable integrations
+        alpha = true,
+        cmp = true,
+        flash = true,
+        gitsigns = true,
+        hop = false,
+        indent_blankline = true,
+        lazy = true,
+        lsp = true,
+        markdown = true,
+        mason = true,
+        navic = false,
+        neo_tree = false,
+        neogit = false,
+        neorg = false,
+        noice = true,
+        notify = true,
+        rainbow_delimiters = true,
+        telescope = true,
+        treesitter = true,
+    },
+    highlight_overrides = {
+
+	}
+}
 -- setup must be called before loading
 vim.cmd("colorscheme vague")
 vim.api.nvim_set_hl(0, "LineNr", { bg = "none" })

@@ -13,6 +13,9 @@ return require('packer').startup(function(use)
 	  use("vague2k/vague.nvim")
 	  use ("bluz71/vim-moonfly-colors")
 	  use ("rebelot/kanagawa.nvim")
+	  use("dgox16/oldworld.nvim")
+	
+
 	  use {
 		  'nvim-treesitter/nvim-treesitter',
 		  run = function()
