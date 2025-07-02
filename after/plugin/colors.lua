@@ -86,15 +86,15 @@ require("vague").setup({
 
   -- Override colors
   colors = {
-	bg = "#111111",
+	bg = "#0d0d0d",
     fg = "#cdcdcd",
     floatBorder = "#878787",
     line = "#252530",
     comment = "#606079",
     builtin = "#6e94b2",
-    func = "#c48282",
+    func = "#f08080",
     string = "#7ec97e",
-    number = "#e0a363",
+    number = "#ffb347",
     property = "#c3c3d5",
     constant = "#aeaed1",
     parameter = "#bb9dbd",
