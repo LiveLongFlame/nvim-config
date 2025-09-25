@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/valen/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/home/valen/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/home/valen/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/home/valen/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/valen/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
+local package_path_str = "/home/atlas/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/home/atlas/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/home/atlas/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/home/atlas/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/atlas/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -77,93 +77,93 @@ _G.packer_plugins = {
   ["Comment.nvim"] = {
     config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   harpoon = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/mason-org/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/mason-org/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
     needs_bufread = false,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["oldworld.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/oldworld.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/oldworld.nvim",
     url = "https://github.com/dgox16/oldworld.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vague.nvim"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/vague.nvim",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/vague.nvim",
     url = "https://github.com/vague2k/vague.nvim"
   },
   ["vim-moonfly-colors"] = {
     loaded = true,
-    path = "/home/valen/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
     url = "https://github.com/bluz71/vim-moonfly-colors"
   }
 }
