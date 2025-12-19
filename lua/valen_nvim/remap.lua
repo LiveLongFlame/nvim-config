@@ -28,3 +28,12 @@ end, {})
 -- Map <leader>s73 to the command
 vim.keymap.set("n", "<leader>73", ":VSplit70Left<CR>", { noremap = true, silent = true })
 
+
+-- format csv file on everytime you open it up
+vim.api.nvim_create_autocmd("BufReadPost", {
+  pattern = "*.csv",
+  callback = function()
+    vim.cmd("CsvViewToggle delimiter=, display_mode=border header_lnum=1")
+  end,
+})
+

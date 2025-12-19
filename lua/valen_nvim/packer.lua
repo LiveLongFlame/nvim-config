@@ -9,20 +9,17 @@ return require('packer').startup(function(use)
 		  -- or                            , branch = '0.1.x',
 		  requires = { {'nvim-lua/plenary.nvim'} }
 	  }	
+	  -- mark down files
+	  use {'iamcco/markdown-preview.nvim'}
+
+	  -- csv formater 
+	  use{'hat0uma/csvview.nvim'}
 	  --color themes
 	  use("vague2k/vague.nvim")
 	  use ("bluz71/vim-moonfly-colors")
 	  use ("rebelot/kanagawa.nvim")
 	  use("dgox16/oldworld.nvim")
 	
-
-	  use {
-		  'nvim-treesitter/nvim-treesitter',
-		  run = function()
-			  local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-			  ts_update()
-		  end,
-	  }
 
 	  use('nvim-lua/plenary.nvim')
 	  use('ThePrimeagen/harpoon')
@@ -39,6 +36,7 @@ return require('packer').startup(function(use)
 		  'nvim-lualine/lualine.nvim',
 		  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	  }
+
 	  --Commenting
 	  use {
 		  'numToStr/Comment.nvim',

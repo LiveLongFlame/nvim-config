@@ -79,7 +79,7 @@ cmp.setup({
 -- Setup Mason and LSP servers
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { 'lua_ls', 'rust_analyzer', 'cssls', 'pyright', 'clangd', 'html', 'eslint', 'jdtls' },
+	ensure_installed = { 'lua_ls', 'rust_analyzer', 'clangd',  'jdtls', 'basedpyright'},
 	handlers = {
 		function(server_name)
 			require('lspconfig')[server_name].setup({})
