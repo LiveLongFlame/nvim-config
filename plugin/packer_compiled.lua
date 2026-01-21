@@ -85,20 +85,25 @@ _G.packer_plugins = {
     path = "/home/atlas/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["csvview.nvim"] = {
     loaded = true,
     path = "/home/atlas/.local/share/nvim/site/pack/packer/start/csvview.nvim",
     url = "https://github.com/hat0uma/csvview.nvim"
   },
+  flexoki = {
+    loaded = true,
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/flexoki",
+    url = "https://github.com/kepano/flexoki-neovim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/atlas/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
-  },
-  ["kanagawa.nvim"] = {
-    loaded = true,
-    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -130,16 +135,16 @@ _G.packer_plugins = {
     path = "/home/atlas/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = false,
     needs_bufread = false,
     path = "/home/atlas/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["oldworld.nvim"] = {
-    loaded = true,
-    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/oldworld.nvim",
-    url = "https://github.com/dgox16/oldworld.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -160,16 +165,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/atlas/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vague.nvim"] = {
-    loaded = true,
-    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/vague.nvim",
-    url = "https://github.com/vague2k/vague.nvim"
-  },
-  ["vim-moonfly-colors"] = {
-    loaded = true,
-    path = "/home/atlas/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
   }
 }
 

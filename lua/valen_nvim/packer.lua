@@ -2,6 +2,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+	-- treesitter
+	use{'nvim-treesitter/nvim-treesitter', run=":TSUpdate"}
   	 -- Packer can manage itself
 	  use 'wbthomason/packer.nvim'
 	  use {
@@ -15,11 +17,7 @@ return require('packer').startup(function(use)
 	  -- csv formater 
 	  use{'hat0uma/csvview.nvim'}
 	  --color themes
-	  use("vague2k/vague.nvim")
-	  use ("bluz71/vim-moonfly-colors")
-	  use ("rebelot/kanagawa.nvim")
-	  use("dgox16/oldworld.nvim")
-	
+	  use({ 'kepano/flexoki-neovim', as = 'flexoki' })
 
 	  use('nvim-lua/plenary.nvim')
 	  use('ThePrimeagen/harpoon')
@@ -43,6 +41,11 @@ return require('packer').startup(function(use)
 		  config = function()
 			  require('Comment').setup()
 		  end
-}
+	  }
+
+	  -- copiolt
+	  use{"github/copilot.vim"}
+
+
 
 end)
