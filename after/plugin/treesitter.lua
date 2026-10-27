@@ -10,6 +10,7 @@ require("nvim-treesitter").setup({
     "html",
     "css",
     "javascript",
+	"markdown"
   },
 
   -- Install missing parsers automatically

@@ -7,17 +7,16 @@ return require('packer').startup(function(use)
   	 -- Packer can manage itself
 	  use 'wbthomason/packer.nvim'
 	  use {
-		  'nvim-telescope/telescope.nvim', tag = '0.1.8',
+		  'nvim-telescope/telescope.nvim', tag = '0.2.1',
 		  -- or                            , branch = '0.1.x',
 		  requires = { {'nvim-lua/plenary.nvim'} }
 	  }	
-	  -- mark down files
-	  use {'iamcco/markdown-preview.nvim'}
 
 	  -- csv formater 
 	  use{'hat0uma/csvview.nvim'}
 	  --color themes
 	  use({ 'kepano/flexoki-neovim', as = 'flexoki' })
+	  use({ 'bluz71/vim-moonfly-colors', as = 'moonfly' })
 
 	  use('nvim-lua/plenary.nvim')
 	  use('ThePrimeagen/harpoon')
@@ -45,7 +44,5 @@ return require('packer').startup(function(use)
 
 	  -- copiolt
 	  use{"github/copilot.vim"}
-
-
 
 end)
